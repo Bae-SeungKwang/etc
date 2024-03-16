@@ -1,0 +1,374 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNOEyn0cJ0jt/M/UOf9whoZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Bae-SeungKwang/etc/blob/master/%5B2%EC%9E%A5%5D_Python_%EA%B8%B0%EB%B3%B8.ipynb_240316\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "zcGtC3hK245x",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0db8a938-9628-4204-e3fd-796b623f1892"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2210\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 2.1.7 확인 문제\n",
+        "# Q1. 아래 자동차 번호의 뒤의 4자리만 출력\n",
+        "license_plate = \"24가 2210\"\n",
+        "last_four_digits = license_plate[-4:]\n",
+        "print(last_four_digits)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.1.7 확인 문제\n",
+        "# Q2 아래의 문자열에서 '홀'만 출력\n",
+        "string = '홀짝홀짝홀짝홀짝'\n",
+        "result = string[::2]\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VH0-X1y1NHgR",
+        "outputId": "d6dde044-20f6-4895-821e-4ecf911273cb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "홀홀홀홀\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.1.7 확인 문제\n",
+        "# Q3 문자열을 거꾸로 뒤집어 출력\n",
+        "string = 'python'\n",
+        "reversed_string = string[::-1]\n",
+        "print(reversed_string)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gE8_S5hENuqy",
+        "outputId": "2cbcf87d-c95e-4d00-8c79-04376fa90d4c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nohtyp\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.1.7 확인 문제\n",
+        "# Q4 아래 전화번호에서 하이픈('-')을 제거하고 출력\n",
+        "phone_number = '010-1111-2222'\n",
+        "phone_number_without_hyphen = phone_number.replace('-', ' ')\n",
+        "print(phone_number_without_hyphen)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dh1Irx5yP51Q",
+        "outputId": "edd2388b-9274-49e6-a268-8e37c13496a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "010 1111 2222\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.1.7 확인 문제\n",
+        "# Q5 아래 변수에 할당된 값의 타입을 판별\n",
+        "\n",
+        "a = '123'\n",
+        "b = 123\n",
+        "c = 123.0\n",
+        "\n",
+        "type_a = type(a)\n",
+        "type_b = type(b)\n",
+        "type_c = type(c)\n",
+        "\n",
+        "print(\"변수 a 타입:\", type_a)\n",
+        "print(\"변수 b 타입:\", type_b)\n",
+        "print(\"변수 c 타입:\", type_c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DfNiEcp_RM57",
+        "outputId": "8de5d2ce-f42f-4636-8540-e3ad8cf50d9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "변수 a 타입: <class 'str'>\n",
+            "변수 b 타입: <class 'int'>\n",
+            "변수 c 타입: <class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.1.7 확인 문제\n",
+        "# Q5 다음의 요구조건에 따라 타입을 변경\n",
+        "#   1. 문자열(정수)은 정수로 변환\n",
+        "#   2. 정수는 문자열로 변환\n",
+        "#   3. 문자열(실수)는 실수로 변환\n",
+        "\n",
+        "var1 = '720'\n",
+        "var2 = 100\n",
+        "var3 = '700.0'\n",
+        "\n",
+        "var1 = int(var1) # 문자열(정수)은 정수로 변환\n",
+        "var2 = str(var2) # 정수는 문자열로 변환\n",
+        "var3 = float(var3) # 문자열(실수)는 실수로 변환\n",
+        "\n",
+        "print(\"변환된 var1의 타입:\", type(var1))\n",
+        "print(\"변환된 var2의 타입:\", type(var2))\n",
+        "print(\"변환된 var3의 타입:\", type(var3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5jqER8onTZH9",
+        "outputId": "2808b159-9cb7-42f3-f83f-2bb40d53e910"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "변환된 var1의 타입: <class 'int'>\n",
+            "변환된 var2의 타입: <class 'str'>\n",
+            "변환된 var3의 타입: <class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.2.5 확인 문제\n",
+        "# Q1. 아래 코드의 출력 결과를 예상해보세요\n",
+        "\n",
+        "if True :\n",
+        "   if False :\n",
+        "       print(\"1\")\n",
+        "       print(\"2\")\n",
+        "   else :\n",
+        "       print(\"3\")\n",
+        "else :\n",
+        "   print(\"4\")\n",
+        "print(\"5\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BqrukDGRi4Z8",
+        "outputId": "fe89918c-cf93-4ec5-afd9-aa60b50c842c"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.2.5 확인 문제\n",
+        "# Q2. 사용자로부터 값을 입력받은 후 해당 값에 20을 더한 값을 출력\n",
+        "# 단 사용자가 입력한 값과 20을 더한 계산 값이 255를 초과하는 경우 255를 출력함\n",
+        "\n",
+        "user_input = int(input(\"값을 입력하세요: \"))  # 사용자로부터 정수 값 입력 받기\n",
+        "\n",
+        "result = user_input + 20  # 입력값에 20을 더하기\n",
+        "\n",
+        "# 계산 결과가 255를 초과하는지 확인하여 조정\n",
+        "if result > 255:\n",
+        "    result = 255\n",
+        "\n",
+        "print(\"결과:\", result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lLT03JK0lhSE",
+        "outputId": "c4a4e5a7-1808-4545-db83-1226b6ec01de"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "값을 입력하세요: 20\n",
+            "결과: 40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.2.5 확인 문제\n",
+        "#Q3. 사용자로부터 문자 1개를 입력받고 소문자인 경우 대문자로, 대문자인 경우 소문자로 변경해서 출력하세요.\n",
+        "\n",
+        "user_input = input(\"문자 1개를 입력하세요: \")  # 사용자로부터 문자 입력 받기\n",
+        "\n",
+        "# 대문자인 경우 소문자로, 소문자인 경우 대문자로 변경하여 출력\n",
+        "if user_input.islower():\n",
+        "    print(user_input.upper())\n",
+        "elif user_input.isupper():\n",
+        "    print(user_input.lower())\n",
+        "else:\n",
+        "    print(\"알파벳 문자를 입력하세요.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lple24gHoJIr",
+        "outputId": "b4edac74-9ca6-403c-c491-fe431285d666"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "문자 1개를 입력하세요: A\n",
+            "a\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2.2.5 확인 문제\n",
+        "# Q4. 점수 구간에 해당하는 학점이 아래와 같이 정의되어 있다. 사용자로부터 score를 입력받아 학점을 출력하라\n",
+        "#점수   학점\n",
+        "#--------------\n",
+        "#80-100   A\n",
+        "#61-80    B\n",
+        "#41-60    C\n",
+        "#21-40    D\n",
+        "#0-20     E\n",
+        "\n",
+        "score = int(input(\"점수를 입력하세요: \"))  # 사용자로부터 점수 입력 받기\n",
+        "\n",
+        "# 학점 판별\n",
+        "if score >= 80 and score <= 100:\n",
+        "    grade = \"A\"\n",
+        "elif score >= 61 and score <= 80:\n",
+        "    grade = \"B\"\n",
+        "elif score >= 41 and score <= 60:\n",
+        "    grade = \"C\"\n",
+        "elif score >= 21 and score <= 40:\n",
+        "    grade = \"D\"\n",
+        "elif score >= 0 and score <= 20:\n",
+        "    grade = \"E\"\n",
+        "else:\n",
+        "    grade = \"유효하지 않은 점수입니다.\"\n",
+        "\n",
+        "print(\"학점:\", grade)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JWGa6hGhpDPe",
+        "outputId": "baf14f8b-1f04-4882-a388-7e87010b8285"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "점수를 입력하세요: 40\n",
+            "학점: D\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
